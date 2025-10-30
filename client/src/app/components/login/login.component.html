@@ -1,1 +1,45 @@
-<p>login works!</p>
+<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+  <!-- Logo -->
+  <img src="assets/logo.png" alt="Logo" class="w-32 h-32 mb-8 cursor-pointer" (click)="navigateToWebsite()">
+
+
+
+  <!-- Login Form -->
+  <form class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+
+    <!-- Email Input -->
+    <div class="mb-4">
+      <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+      <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter your email">
+    </div>
+
+    <!-- Password Input -->
+    <div class="mb-6">
+      <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+      <input type="password" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter your password">
+    </div>
+
+    <!-- Login Button -->
+    <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 mb-4">Login</button>
+
+    <!-- Divider -->
+    <div class="flex items-center my-4">
+      <div class="flex-1 border-t border-gray-300"></div>
+      <span class="px-3 text-sm text-gray-500">or</span>
+      <div class="flex-1 border-t border-gray-300"></div>
+    </div>
+
+    <!-- Google Auth Button -->
+    <button type="button" class="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 mb-2 flex items-center justify-center">
+      <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo" class="w-5 h-5 mr-2">
+      Login with Google
+    </button>
+
+    <!-- Facebook Auth Button -->
+    <button type="button" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex items-center justify-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="w-5 h-5 mr-2">
+      Login with Facebook
+    </button>
+  </form>
+</div>
